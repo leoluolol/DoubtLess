@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doubtless"
+version = "0.1.0"
+description = "Training-free contrastive decoding for efficient reasoning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = ["torch>=2.4", "transformers>=5.15,<6"]
+
+[project.optional-dependencies]
+vllm = ["vllm==0.29.0", "triton"]
+
+[project.entry-points."vllm.general_plugins"]
+doubtless = "doubtless.vllm.plugin:register"
+
+[tool.setuptools.packages.find]
+include = ["doubtless*"]

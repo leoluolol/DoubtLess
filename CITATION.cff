@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use DoubtLess, please cite the accompanying paper."
+title: "DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning"
+type: software
+version: 0.1.0
+license: Apache-2.0
+authors:
+  - family-names: Luo
+    given-names: Minghao
+  - family-names: Chen
+    given-names: Liang
+preferred-citation:
+  type: article
+  title: "DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning"
+  authors:
+    - family-names: Luo
+      given-names: Minghao
+    - family-names: Chen
+      given-names: Liang
+  year: 2026
