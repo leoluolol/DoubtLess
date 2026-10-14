@@ -1,6 +1,10 @@
 # DoubtLess
 
-Training-free contrastive decoding for efficient reasoning.
+[![arXiv](https://img.shields.io/badge/arXiv-2610.18862-b31b1b.svg)](https://arxiv.org/abs/2610.18862)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+
+Training-free contrastive decoding for efficient reasoning. This repository is the code for the paper [DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning](https://arxiv.org/abs/2610.18862).
 
 At every step of the large model's thinking, a small model reads the prompt and the thinking so far twice, once with a **brief** instruction and once with a **verbose** one. The difference between its two logit vectors steers the large model:
 
@@ -69,8 +73,22 @@ bash tests/run_cpu_tests.sh
 
 On a GPU, check the instruction-attention kernel with `python tests/gpu_test_instruction_attn.py`.
 
-## Paper and license
+## Citation
 
-**DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning** — Minghao Luo and Liang Chen (2026). Citation metadata is in [CITATION.cff](CITATION.cff).
+```bibtex
+@misc{luo2026doubtless,
+  title         = {DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning},
+  author        = {Minghao Luo and Liang Chen},
+  year          = {2026},
+  eprint        = {2610.18862},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2610.18862}
+}
+```
+
+Citation metadata is also in [CITATION.cff](CITATION.cff).
+
+## License
 
 [Apache 2.0](LICENSE).

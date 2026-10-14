@@ -4,6 +4,7 @@ title: "DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning"
 type: software
 version: 0.1.0
 license: Apache-2.0
+repository-code: "https://github.com/leoluolol/DoubtLess"
 authors:
   - family-names: Luo
     given-names: Minghao
@@ -18,3 +19,6 @@ preferred-citation:
     - family-names: Chen
       given-names: Liang
   year: 2026
+  journal: "arXiv preprint arXiv:2610.18862"
+  url: "https://arxiv.org/abs/2610.18862"
+  doi: "10.48550/arXiv.2610.18862"
