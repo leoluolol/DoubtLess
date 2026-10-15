@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
-Training-free contrastive decoding for efficient reasoning. This repository is the code for the paper [DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning](https://arxiv.org/abs/2610.18862).
+DoubtLess is a training-free contrastive decoding method for efficient LLM reasoning. It shortens chain-of-thought (CoT) traces and reduces overthinking. This repository contains the code for the paper [DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning](https://arxiv.org/abs/2610.18862).
 
 At every step of the large model's thinking, a small model reads the prompt and the thinking so far twice, once with a **brief** instruction and once with a **verbose** one. The difference between its two logit vectors steers the large model:
 
